@@ -58,6 +58,13 @@ section > h2 {
   color: white;
   display: none;
 }
+.contactMe {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.links{
+  text-align: center;
+}
 @media screen and (max-width:580px) {
   nav ul {
     max-height: 0;
