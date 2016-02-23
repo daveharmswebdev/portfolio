@@ -42,7 +42,7 @@ section {
   margin: 0 auto;
   display: none;
 }
-section > h2 {
+section > h2, section > h3 {
   text-align: center;
 }
 .showMainContent {
@@ -57,6 +57,18 @@ section > h2 {
   cursor: pointer;
   color: white;
   display: none;
+}
+.work--screenshot {
+  text-align: center;
+  margin: 0 auto;
+}
+.demoRepo > i {
+	display: inline-block;
+	margin: 1.5rem;
+}
+img {
+  margin-top: 0.5rem;
+  height: 8rem;
 }
 .video-container {
 	position:relative;
@@ -94,5 +106,8 @@ section > h2 {
   }
   .handle {
     display: block;
+  }
+  section {
+    width: 90%;
   }
 }
