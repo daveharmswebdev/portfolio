@@ -62,7 +62,7 @@ section > h2, section > h3 {
   text-align: center;
   margin: 0 auto;
 }
-.demoRepo > i {
+.demoRepo > a {
 	display: inline-block;
 	margin: 1.5rem;
 }
