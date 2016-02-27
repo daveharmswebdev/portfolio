@@ -72,6 +72,9 @@ img {
   margin-top: 0.5rem;
   height: 8rem;
 }
+.resume {
+  text-align: center;
+}
 .video-container {
   text-align: center;
 	position:relative;
@@ -113,4 +116,14 @@ img {
   section {
     width: 90%;
   }
+}
+
+@media only screen and (min-height:1000px) {
+    .featherlight-image { height: 900px; }
+}
+@media only screen and (min-height:700px) {
+    .featherlight-image { height: 600px; }
+}
+@media only screen and (max-height:700px) {
+    .featherlight-image { height: 400px; }
 }
