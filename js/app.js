@@ -11,7 +11,7 @@ $(function() {
   })
   $('.helloWorld').click(function() {
     $.featherlight({iframe: 'https://www.youtube.com/embed/VG9n_hZ9BJQ?rel=0', iframeMaxWidth: '80%', iframeWidth: 500,
-    iframeHeight: 300, allowfullscreen: 'true'})
+    iframeHeight: 300, allowfullscreen: 'allowfullscreen'})
   })
 
 
