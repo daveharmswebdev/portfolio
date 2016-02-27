@@ -9,4 +9,9 @@ $(function() {
     $('.'+sectionToShow).addClass('showMainContent');
     $('nav ul').toggleClass('showing');
   })
+  $('.helloWorld').click(function() {
+    console.log('lcick');
+  })
+
+
 })

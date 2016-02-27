@@ -71,6 +71,7 @@ img {
   height: 8rem;
 }
 .video-container {
+  text-align: center;
 	position:relative;
 	padding-bottom:56.25%;
 	padding-top:30px;
