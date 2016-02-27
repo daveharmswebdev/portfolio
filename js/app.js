@@ -10,7 +10,8 @@ $(function() {
     $('nav ul').toggleClass('showing');
   })
   $('.helloWorld').click(function() {
-    console.log('lcick');
+    $.featherlight({iframe: 'https://www.youtube.com/embed/VG9n_hZ9BJQ?rel=0', iframeMaxWidth: '80%', iframeWidth: 500,
+    iframeHeight: 300, allowfullscreen: 'true'})
   })
 
 
