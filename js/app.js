@@ -10,9 +10,22 @@ $(function() {
     $('nav ul').toggleClass('showing');
   })
   $('.helloWorld').click(function() {
-    $.featherlight({iframe: 'https://www.youtube.com/embed/VG9n_hZ9BJQ?rel=0', iframeMaxWidth: '80%', iframeWidth: 500,
-    iframeHeight: 300, allowfullscreen: 'allowfullscreen'})
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    var video = $(this).attr('data-url');
+    console.log(video);
+    $(".videowrap").fadeIn(400);
+    $("#video").attr("src",video);
   })
-
-
+  //click X
+  $(".closebox, .videowrap").click(function(){
+    $(".videowrap").fadeOut(400);
+    $("#video").attr("src","");
+  });
+  //esc keydown
+  $(document).keydown(function(event){
+    if(event.which == 27){
+      $(".videowrap").fadeOut(400);
+      $("#video").attr("src","");
+    }
+  });
 })
