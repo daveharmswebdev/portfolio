@@ -41,7 +41,8 @@ section {
   line-height: 1.5rem;
   font-size: 0.9rem;
   padding: 40px;
-  width: 75%;
+  width: 100%;
+  padding: 0;
   margin: 0 auto;
   display: none;
 }
@@ -69,7 +70,7 @@ section > h2, section > h3 {
 	display: inline-block;
 	margin: 1.5rem;
 }
-img {
+.displayContent {
   margin-top: 0.5rem;
   height: 8rem;
 }
@@ -78,6 +79,9 @@ img:hover {
 }
 .resume {
   text-align: center;
+}
+.resumejpg {
+  width: 100%;
 }
 .contactMe {
   text-align: center;
@@ -138,19 +142,31 @@ img:hover {
   margin-top: -100px;
 }
 @media only screen and (min-width:400px) {
+  section {
+    padding: 1rem;
+  }
   #video, .lowRentBox{
     width: 400px;
     height: 267px;
     margin-left: -200px;
     margin-top: -130px;
   }
+  .resumejpg {
+    width: 90%;
+  }
 }
 @media only screen and (min-width:700px) {
+  section {
+    width: 90%;
+  }
   #video, .lowRentBox{
     width: 600px;
     height: 400px;
     margin-left: -300px;
     margin-top: -200px;
+  }
+  .resumejpg {
+    width: 80%;
   }
 }
 @media screen and (max-width:580px) {
