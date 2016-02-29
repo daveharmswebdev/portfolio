@@ -80,8 +80,12 @@ img:hover {
 .resume {
   text-align: center;
 }
+.download {
+  margin-bottom: 1.25rem;
+}
 .resumejpg {
   width: 100%;
+  border: 1px solid black;
 }
 .contactMe {
   text-align: center;
