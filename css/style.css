@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 header {
   background-image: url(../images/coffee.jpg);
   background-size: cover;
@@ -87,26 +86,6 @@ img:hover {
 .links{
   text-align: center;
 }
-@media screen and (max-width:580px) {
-  nav ul {
-    max-height: 0;
-  }
-  .showing {
-    max-height: 20em;
-  }
-  nav ul li {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 15px;
-    text-align: left;
-  }
-  .handle {
-    display: block;
-  }
-  section {
-    width: 90%;
-  }
-}
 .closebox{
   background: #006699;
   color: white;
@@ -132,7 +111,7 @@ img:hover {
   text-align: center;
   line-height: 44px;
 }
-.videowrap {
+.videowrap, .imagewrap {
   display: none;
   position: absolute;
   width: 100%;
@@ -149,23 +128,7 @@ img:hover {
 	height:0;
 	overflow:hidden;
 }
-/*.video-container iframe, .video-container object, .video-container embed {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-}*/
-/*#video{
-  width: 600px;
-  height: 400px;
-  position: absolute;
-  left: 50%;
-  margin-left: -300px;
-  top: 50%;
-  margin-top: -200px;
-}*/
-#video{
+#video, .lowRentBox{
   width: 300px;
   height: 200px;
   position: absolute;
@@ -174,17 +137,8 @@ img:hover {
   top: 50%;
   margin-top: -100px;
 }
-@media only screen and (min-height:1000px) {
-    .featherlight-image { height: 900px; }
-}
-@media only screen and (min-height:700px) {
-    .featherlight-image { height: 600px; }
-}
-@media only screen and (max-height:700px) {
-    .featherlight-image { height: 400px; }
-}
 @media only screen and (min-width:400px) {
-  #video{
+  #video, .lowRentBox{
     width: 400px;
     height: 267px;
     margin-left: -200px;
@@ -192,10 +146,30 @@ img:hover {
   }
 }
 @media only screen and (min-width:700px) {
-  #video{
+  #video, .lowRentBox{
     width: 600px;
     height: 400px;
     margin-left: -300px;
     margin-top: -200px;
+  }
+}
+@media screen and (max-width:580px) {
+  nav ul {
+    max-height: 0;
+  }
+  .showing {
+    max-height: 20em;
+  }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+  }
+  .handle {
+    display: block;
+  }
+  section {
+    width: 90%;
   }
 }

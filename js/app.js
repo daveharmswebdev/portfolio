@@ -9,22 +9,24 @@ $(function() {
     $('.'+sectionToShow).addClass('showMainContent');
     $('nav ul').toggleClass('showing');
   })
-  $('.helloWorld').click(function() {
+  $('.displayContent').click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     var video = $(this).attr('data-url');
-    console.log(video);
-    $(".videowrap").fadeIn(400);
-    $("#video").attr("src",video);
+    if (video.substring(0,4)==='http') {
+      $(".videowrap").fadeIn(400);
+      $("#video").attr("src",video);
+    } else {
+      $(".imagewrap").fadeIn(400);
+      $('.lowRentBox').attr('src',video).fadeIn(400);
+    }
   })
-  //click X
-  $(".closebox, .videowrap").click(function(){
-    $(".videowrap").fadeOut(400);
+  $(".closebox, .videowrap, .imagewrap").click(function(){
+    $(".videowrap, .imagewrap").fadeOut(400);
     $("#video").attr("src","");
   });
-  //esc keydown
   $(document).keydown(function(event){
     if(event.which == 27){
-      $(".videowrap").fadeOut(400);
+      $(".videowrap, .imagewrap").fadeOut(400);
       $("#video").attr("src","");
     }
   });
