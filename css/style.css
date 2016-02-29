@@ -1,3 +1,6 @@
+header, section {
+  font-family: 'Varela Round', sans-serif;
+}
 body {
   margin: 0;
   padding: 0;
@@ -18,7 +21,7 @@ a {
   color: inherit;
 }
 nav ul {
-  background-color: rgb(0,0,0);
+  background-color: rgb(0, 0, 0);
   overflow: hidden;
   color: white;
   padding: 0;
@@ -35,7 +38,7 @@ nav ul li {
   padding: 20px;
 }
 nav ul li:hover {
-  background-color: rgb(178,162,162);
+  background-color: rgb(178, 162, 162);
 }
 section {
   line-height: 1.5rem;
@@ -54,7 +57,7 @@ section > h2, section > h3 {
 }
 .handle {
   width: 100%;
-  background: rgb(178,169,162);
+  background: rgb(178, 169, 162);
   text-align: left;
   box-sizing: border-box;
   padding: 15px 10px;
@@ -67,8 +70,8 @@ section > h2, section > h3 {
   margin: 0 auto;
 }
 .demoRepo > a {
-	display: inline-block;
-	margin: 1.5rem;
+  display: inline-block;
+  margin: 1.5rem;
 }
 .displayContent {
   margin-top: 0.5rem;
@@ -91,10 +94,10 @@ img:hover {
   text-align: center;
   margin-bottom: 2rem;
 }
-.links{
+.links {
   text-align: center;
 }
-.closebox{
+.closebox {
   background: #006699;
   color: white;
   padding: 10px 14px;
@@ -104,7 +107,7 @@ img:hover {
   position: absolute;
   margin: 20px;
   top: 0;
-  right:0;
+  right: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -126,17 +129,17 @@ img:hover {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,.9);
+  background: rgba(0, 0, 0, .9);
 }
 .video-container {
   text-align: center;
-	position:relative;
-	padding-bottom:56.25%;
-	padding-top:30px;
-	height:0;
-	overflow:hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
-#video, .lowRentBox{
+#video, .lowRentBox {
   width: 300px;
   height: 200px;
   position: absolute;
@@ -146,10 +149,13 @@ img:hover {
   margin-top: -100px;
 }
 @media only screen and (min-width:400px) {
+  header {
+    font-size: 1.25rem;
+  }
   section {
     padding: 1rem;
   }
-  #video, .lowRentBox{
+  #video, .lowRentBox {
     width: 400px;
     height: 267px;
     margin-left: -200px;
@@ -160,10 +166,13 @@ img:hover {
   }
 }
 @media only screen and (min-width:700px) {
+  header {
+    font-size: 1.5rem;
+  }
   section {
     width: 90%;
   }
-  #video, .lowRentBox{
+  #video, .lowRentBox {
     width: 600px;
     height: 400px;
     margin-left: -300px;
