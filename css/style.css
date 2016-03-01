@@ -134,7 +134,7 @@ img:hover {
 .video-container {
   text-align: center;
   position: relative;
-  margin: 1rem;
+  margin: 1rem auto;
   width: 90%
 }
 .video-container > p {
@@ -165,6 +165,9 @@ img:hover {
   .resumejpg {
     width: 90%;
   }
+  .video-container {
+    width: 75%;
+  }
 }
 @media only screen and (min-width:700px) {
   header {
@@ -181,6 +184,9 @@ img:hover {
   }
   .resumejpg {
     width: 80%;
+  }
+  .video-container {
+    width: 60%;
   }
 }
 @media screen and (max-width:580px) {
