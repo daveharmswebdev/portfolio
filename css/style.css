@@ -98,7 +98,7 @@ img:hover {
   text-align: center;
 }
 .closebox {
-  background: #006699;
+  background: rgb(178, 169, 162);
   color: white;
   padding: 10px 14px;
   font-family: Arial, Baskerville, monospace;
@@ -134,10 +134,11 @@ img:hover {
 .video-container {
   text-align: center;
   position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
+  margin: 1rem;
+  width: 90%
+}
+.video-container > p {
+  text-align: left;
 }
 #video, .lowRentBox {
   width: 300px;
